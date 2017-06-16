@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+
+
+   <link rel="icon" type="image/png" href="image/icone.png" />
+    <title>SS home page</title>
+    <meta name=”robots” content=”noodp”>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="contact.css" rel="stylesheet">
+
+    
+
+    <script type="text/javascript" src="custom.js"></script>
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery-1.11.3.js"></script>
+    <script src="bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+  $(document).ready(function() {
+    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 750; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });
+</script>
+
+
+  </head>
+
+  <body class="b1" id="intro">
+
+ <p style="color:#F9D649";>Contact Me</p>
+
+  
+   
+     <font color="white">
+     
+    <p class="sec_bis">Interestingly  enough I am always motivated to work with other people in <br>
+		any field or at least have a chat ...</br>
+  
+	<div class="row">
+	
+		<label for="name">Your name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<form action="mailto:samihsghier16@augustana.edu" method="post" enctype="text/plain">
+		<label for="email">Your email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">How can I help ?</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="20"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" /> </p>
+
+    <div class="bar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="js-scrollTo navbar-brand" href="#intro">S<span id="R">S</span></a>
+		  </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a class="js-scrollTo" href="#about">About</a></li>
+            <li><a class="js-scrollTo" href="#realisation">Achievements</a></li>
+            <li><a class="js-scrollTo" href="#cv">Resume</a></li>
+            <li><a class="js-scrollTo" href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/samih-sghier" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/samih-sghier-871bb1123" target="_blank">Linkedin</a></li>
+          </ul>
+          <form class="navbar-form navbar-right inline-form" method=GET action=http://www.google.com/custom>
+            <div class="form-group">
+              <input type="search" name=q class="input-sm form-control" placeholder="Search">
+              <button type="submit" name=sa class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Submit</button>
+             <input class="hide" type=radio name=sitesearch value="samihsghier16@augustana.edu" checked>
+            </div>
+          </form>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </div>
+
+  
+   
+     
