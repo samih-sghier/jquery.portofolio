@@ -1,1 +1,153 @@
 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+
+    <link rel="icon" type="image/png" href="icone.png" />
+    <title>SS EdgeRank</title>
+    <meta name=”robots” content=”noodp”>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="EdgeRank.css" rel="stylesheet">
+
+    
+
+    <script type="text/javascript" src="custom.js"></script>
+      <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery-1.11.3.js"></script>
+    <script src="bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+  $(document).ready(function() {
+    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 750; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });
+</script>
+
+
+  </head>
+
+  <body class="b1" id="intro">
+
+    <div class="bar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="js-scrollTo navbar-brand" href="index.html">S<span id="R">S</span></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+           <li><a class="js-scrollTo" href="index.html#about">About</a></li>
+            <li><a class="js-scrollTo" href="index.html#realisation">Achievements</a></li>
+            <li><a class="js-scrollTo" href="index.html#cv">Resume</a></li>
+            <li><a  class="js-scrollTo" href="index.html#contact" >Contact</a></li>
+            <li><a href="https://github.com/samih-sghier" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/samih-sghier-871bb1123" target="_blank">Linkedin</a>
+            <li><a href="https://samih-sghier.github.io/samih-sghier/" target="_blank">Second Website</a>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-right inline-form" method=GET action=http://www.google.com/custom>
+            <div class="form-group">
+              <input type="search" name=q class="input-sm form-control" placeholder="Search">
+              <button type="submit" name=sa class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-eye-open"></span> Submit</button>
+             <input class="hide" type=radio name=sitesearch value="samihsghier16@augustana.edu" checked>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="EdgeRank">
+        <h2>Facebook's hidden   <em>Matrix</em></h2><br /><br />
+        <p class="sec_bis">During the summer of 2016-2017 and in the frame of free research and curiosity, I accomplished a  <em>personal work initiative organized</em> <em> by multiple ressources </em> .<br />
+         My project fell on the study of the famous  <em>EdgeRank </em>by  <em>Facebook</em>.<br />
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <p><a class="js-scrollTo" href="#about" id="en_bas"><img src="desc.png" alt="bas" /></a></p>
+      </div>
+
+  <div class="container" id="about">
+      <div>
+        <br /><br />
+        <h2>Introduction : From hidden power to explicit vision</h2>
+        <div class="sec">
+          <p>No need for introductions <em>, Facebook</em> remains the first social media plateform out there. Everyday billions of posts are created by users;
+            however how are they classified ? &nbsp;Is there something that controls &nbsp;which stories appear in each user's newsfeed ?.</p>
+          <p>Unlike Google's <em> PageRank, Google Panda </em><em>and</em><em> Google Pengouin, Facebook  actually appears to be using two algorithms, although this has not been conclusively proven. The EdgeRank algorithm ranks stories, and a second algorithm sorts the newsfeed. This newsfeed algorithm includes a randomization element and a keyword aggregator. </em></p>
+          <p>The goal of this study was to examinate Serkan Piantino's algorithm, focusing on three major components : </p>
+          <p>1-Affinity Score </p>
+          <p>2-Edge Weight</p>
+          <p>3- Time Decay.</p>
+        </div>
+      </div>
+
+      <div>
+       
+    </div>
+
+
+      <div>
+        <h2>Study presentation</h2>
+        <div class="sec"> 
+          <ul>
+            <li><a href="donnee/matrice-cachee.pdf">Facebook's hidden <em>Matrix</em></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h2>References</h2>
+        <div class="sec"> 
+          <ul>
+            <li><a href="http://www.education.gouv.fr/pid25535/bulletin_officiel.html?cid_bo=59028">Details</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <br />
+
+    </div><!-- /.container -->
+
+
+  
+    
+  <div data-role="footer" class ="designed">
+      <h5><em>SS home page ~ 2017</em></h5>
+    </div><!-- /footer -->
+</body>
+
+    <!-- Google Analytics include
+   ================================================== -->
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-71751088-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+    
+</html>
