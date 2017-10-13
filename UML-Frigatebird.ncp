@@ -1,0 +1,334 @@
+<Project>
+  <Name>UML Diagram</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>StorySlide</Name>
+        <Access>Public</Access>
+        <Location left="777" top="507" />
+        <Size width="187" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String storyText</Member>
+        <Member type="Field">File image</Member>
+        <Member type="Method">public void setImage(File img)</Member>
+        <Member type="Method">public void setStoryText(String text)</Member>
+        <Member type="Method">public String getStoryText()</Member>
+        <Member type="Method">public void displayStorySlide()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MenuScreen</Name>
+        <Access>Public</Access>
+        <Location left="261" top="1215" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String title</Member>
+        <Member type="Method">public void setTitle(String title)</Member>
+        <Member type="Method">public void display()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SlideEdit</Name>
+        <Access>Public</Access>
+        <Location left="1438" top="48" />
+        <Size width="198" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;Slide&gt; slides</Member>
+        <Member type="Method">public void addSlide()</Member>
+        <Member type="Method">public void removeSlide(int index)</Member>
+        <Member type="Method">public Slide getSlide(int index)</Member>
+        <Member type="Method">public void displaySlideEditScreen()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GameEdit</Name>
+        <Access>Public</Access>
+        <Location left="219" top="97" />
+        <Size width="190" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;Game&gt; games</Member>
+        <Member type="Method">public void addGame()</Member>
+        <Member type="Method">public void removeGame(int index)</Member>
+        <Member type="Method">public Game getGame(int index)</Member>
+        <Member type="Method">public void displayGameEditScreen()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Game</Name>
+        <Access>Public</Access>
+        <Location left="132" top="923" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;Slide&gt; slides</Member>
+        <Member type="Field">String title</Member>
+        <Member type="Method">public String getTitle()</Member>
+        <Member type="Method">public void displaySlide(int index)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Action</Name>
+        <Access>Public</Access>
+        <Location left="1017" top="909" />
+        <Size width="280" height="451" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String text</Member>
+        <Member type="Field">int connection</Member>
+        <Member type="Field">int days</Member>
+        <Member type="Field">TreeMap&lt;String,Integer&gt; statusChange</Member>
+        <Member type="Field">TreeMap&lt;String,Integer&gt; inventoryChange</Member>
+        <Member type="Field">String rejectionText</Member>
+        <Member type="Field">String transMessage</Member>
+        <Member type="Field">boolean visible</Member>
+        <Member type="Field">String item</Member>
+        <Member type="Field">boolean allowed</Member>
+        <Member type="Method">public void setConnection(Slide connection)</Member>
+        <Member type="Method">public int getConnection()</Member>
+        <Member type="Method">public void setText(String text)</Member>
+        <Member type="Method">public String getText()</Member>
+        <Member type="Method">public void setDays(int days)</Member>
+        <Member type="Method">public int getDays()</Member>
+        <Member type="Method">public void setVisibile(boolean visible)</Member>
+        <Member type="Method">public boolean getVisible()</Member>
+        <Member type="Method">public void setRejectionText(String rejectionText)</Member>
+        <Member type="Method">public String getRejectionText()</Member>
+        <Member type="Method">public void setAllowed(boolean allowed)</Member>
+        <Member type="Method">public boolean getAllowed()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Status</Name>
+        <Access>Public</Access>
+        <Location left="1321" top="507" />
+        <Size width="214" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String morale</Member>
+        <Member type="Field">int health</Member>
+        <Member type="Method">public Status getStatus()</Member>
+        <Member type="Method">public void changeMorale(String morale)</Member>
+        <Member type="Method">public void changeHealth(int health)</Member>
+        <Member type="Method">public int getHealth()</Member>
+        <Member type="Method">public String getMorale()</Member>
+        <Member type="Method">public void displayStatus()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Inventory</Name>
+        <Access>Public</Access>
+        <Location left="973" top="507" />
+        <Size width="236" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">TreeMap&lt;String,Integer&gt; items</Member>
+        <Member type="Method">public Inventory getInventory()</Member>
+        <Member type="Method">public int getQuantity(String item)</Member>
+        <Member type="Method">public void add(String item, int quantity)</Member>
+        <Member type="Method">public void remove(String item, int quantity)</Member>
+        <Member type="Method">public void displayInventoryScreen()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Slide</Name>
+        <Access>Public</Access>
+        <Location left="336" top="376" />
+        <Size width="226" height="349" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int numActions</Member>
+        <Member type="Field">String title</Member>
+        <Member type="Field">File image</Member>
+        <Member type="Field">String storyText</Member>
+        <Member type="Field">String imageText</Member>
+        <Member type="Method">public void setNumActions()</Member>
+        <Member type="Method">private int getNumActions()</Member>
+        <Member type="Method">public void setImage(File img)</Member>
+        <Member type="Method">public void setStoryText(String storyText)</Member>
+        <Member type="Method">public String getStoryText()</Member>
+        <Member type="Method">public void setImageText(String imageText)</Member>
+        <Member type="Method">public String getImageText()</Member>
+        <Member type="Method">public void displaySlide()</Member>
+        <Member type="Method">public String getTitle()</Member>
+        <Member type="Method">public void setTitle(String title)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Player</Name>
+        <Access>Public</Access>
+        <Location left="1433" top="1037" />
+        <Size width="205" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int numDays</Member>
+        <Member type="Field">String name</Member>
+        <Member type="Method">public boolean hasItem(String item)</Member>
+        <Member type="Method">public String getName()</Member>
+        <Member type="Method">public void setName(String name)</Member>
+        <Member type="Method">public void changeDays(int days)</Member>
+        <Member type="Method">public int getDays()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MapSlide</Name>
+        <Access>Public</Access>
+        <Location left="579" top="507" />
+        <Size width="189" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">File mapImage</Member>
+        <Member type="Field">String mapText</Member>
+        <Member type="Method">public void setImage(File img)</Member>
+        <Member type="Method">public void setMapText(String Text)</Member>
+        <Member type="Method">public String getMapText()</Member>
+        <Member type="Method">public void displayMap()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Classes Exclusive to Game Builder
+</Text>
+        <Location left="797" top="54" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Class exclusive to Game
+</Text>
+        <Location left="1394" top="1322" />
+        <Size width="160" height="75" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="2" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="2" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="3" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="4" second="1">
+        <Label>Menu Screen</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="3" second="4">
+        <Label>Games</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="5" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="5" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="4" second="8">
+        <Label>Slides</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="0">
+        <Label>Story Slides</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="10" second="4">
+        <Label>Maps</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="10">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="8" second="5">
+        <Label>Actions</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <EndMultiplicity>1..4</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="8">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="9" second="7">
+        <Label>Inventory</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="6">
+        <Label>Status</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="9">
+        <Label>Player</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Comment" first="11" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Comment" first="11" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Comment" first="12" second="9">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
